@@ -30,9 +30,6 @@ Nếu không lấy được danh sách, bạn có thể nhập trực tiếp `Ma
 2. Bấm **Đăng ký các lớp đã chọn**.
 3. Giữ popup extension và tab portal mở cho tới khi nhận đủ kết quả.
 
-Các yêu cầu được khởi chạy cách nhau khoảng 150 ms mà không chờ lớp trước phản
-hồi. Kết quả vẫn được ghép đúng với từng lớp.
-
 > **Thông báo lỗi do quá tải hoặc timeout không chắc là đăng ký thất bại.**
 > Server có thể đã ghi nhận học phần nhưng không trả được kết quả về extension.
 > Hãy tải lại portal và kiểm tra danh sách đã đăng ký.
