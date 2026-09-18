@@ -1,11 +1,6 @@
 # HCMUS Course Assist
 
-Tiện ích Chrome/Edge hỗ trợ đăng ký học phần khi giao diện portal HCMUS phản
-hồi chậm hoặc quá tải.
-
-Bạn có thể chuẩn bị danh sách lớp từ trước, sau đó gửi yêu cầu đăng ký trực
-tiếp bằng phiên portal đang đăng nhập mà không cần mở F12, copy cookie hay dùng
-Postman.
+Tiện ích Chrome/Edge hỗ trợ đăng ký học phần CTDA HCMUS
 
 > **Thông báo lỗi do quá tải hoặc timeout không chắc là đăng ký thất bại.**
 > Server có thể đã ghi nhận học phần nhưng không trả được kết quả về extension.
