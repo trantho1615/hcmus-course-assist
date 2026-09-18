@@ -23,7 +23,7 @@ Postman.
 
 ## Cách sử dụng
 
-### Trước giờ đăng ký
+### Trước giờ đăng ký (khoảng 30 phút để tránh sập web)
 
 1. Đăng nhập portal và mở trang đăng ký học phần.
 2. Mở extension.
