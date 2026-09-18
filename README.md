@@ -2,10 +2,6 @@
 
 Tiện ích Chrome/Edge hỗ trợ đăng ký học phần CTDA HCMUS
 
-> **Thông báo lỗi do quá tải hoặc timeout không chắc là đăng ký thất bại.**
-> Server có thể đã ghi nhận học phần nhưng không trả được kết quả về extension.
-> Hãy tải lại portal và kiểm tra danh sách đã đăng ký.
-
 ## Cài đặt
 
 1. Tải tệp ZIP tại [Releases](https://github.com/trantho1615/hcmus-course-assist/releases).
@@ -36,6 +32,10 @@ Nếu không lấy được danh sách, bạn có thể nhập trực tiếp `Ma
 
 Các yêu cầu được khởi chạy cách nhau khoảng 150 ms mà không chờ lớp trước phản
 hồi. Kết quả vẫn được ghép đúng với từng lớp.
+
+> **Thông báo lỗi do quá tải hoặc timeout không chắc là đăng ký thất bại.**
+> Server có thể đã ghi nhận học phần nhưng không trả được kết quả về extension.
+> Hãy tải lại portal và kiểm tra danh sách đã đăng ký.
 
 ## Lưu ý
 
