@@ -7,24 +7,13 @@ Bạn có thể chuẩn bị danh sách lớp từ trước, sau đó gửi yêu
 tiếp bằng phiên portal đang đăng nhập mà không cần mở F12, copy cookie hay dùng
 Postman.
 
-> [!IMPORTANT]
 > **Thông báo lỗi do quá tải hoặc timeout không chắc là đăng ký thất bại.**
 > Server có thể đã ghi nhận học phần nhưng không trả được kết quả về extension.
-> Hãy tải lại portal và kiểm tra danh sách đã đăng ký trước khi thử lại.
-
-## Tính năng
-
-- Lấy danh sách lớp chưa đăng ký từ portal.
-- Tìm kiếm và chọn trước nhiều lớp.
-- Hiển thị mã môn, lớp, tên môn, sĩ số và `MaMG`.
-- Hỗ trợ nhập `MaMG` thủ công.
-- Gửi các yêu cầu gần đồng thời để hạn chế chậm trễ giữa các lớp.
-- Hiển thị kết quả riêng cho từng lớp.
-- Không yêu cầu mật khẩu, copy cookie hoặc gửi dữ liệu tới máy chủ bên thứ ba.
+> Hãy tải lại portal và kiểm tra danh sách đã đăng ký.
 
 ## Cài đặt
 
-1. Tải tệp ZIP tại mục [Releases](https://github.com/trantho1615/hcmus-course-assist/releases).
+1. Tải tệp ZIP tại [Releases](https://github.com/trantho1615/hcmus-course-assist/releases).
 2. Giải nén tệp ZIP.
 3. Mở `chrome://extensions` hoặc `edge://extensions`.
 4. Bật **Developer mode / Chế độ dành cho nhà phát triển**.
@@ -53,27 +42,9 @@ Nếu không lấy được danh sách, bạn có thể nhập trực tiếp `Ma
 Các yêu cầu được khởi chạy cách nhau khoảng 150 ms mà không chờ lớp trước phản
 hồi. Kết quả vẫn được ghép đúng với từng lớp.
 
-## Cách hiểu kết quả
-
-- **Đăng ký thành công:** lớp đã được server ghi nhận.
-- **Đã đăng ký trước đó:** lớp đã có trong danh sách đăng ký của bạn.
-- **Portal đang ở chế độ xem trước:** hiện chưa cho phép đăng ký.
-- **Lỗi nghiệp vụ:** extension hiển thị thông báo do portal trả về, chẳng hạn
-  hết chỗ hoặc không đủ điều kiện.
-- **Quá tải, timeout hoặc lỗi mạng:** chưa thể xác định chắc chắn kết quả.
-
-Khi gặp lỗi quá tải:
-
-1. Không bấm đăng ký lại liên tục.
-2. Chờ portal ổn định hơn rồi tải lại trang.
-3. Kiểm tra danh sách đã đăng ký.
-4. Chỉ gửi lại nếu môn chưa được ghi nhận.
-
 ## Lưu ý
 
 - Đây không phải ứng dụng chính thức của HCMUS.
 - Extension không thể đảm bảo còn chỗ, không trùng lịch hoặc đủ điều kiện học vụ.
 - Portal là nguồn xác nhận cuối cùng về kết quả đăng ký.
 - Hãy sử dụng phù hợp với quy định của nhà trường và không gửi request lặp liên tục.
-
-Phiên bản hiện tại: **0.4.0**.
