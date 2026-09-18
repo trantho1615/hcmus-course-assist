@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "HCMUS Course Assist",
+  "version": "0.4.0",
+  "description": "Chuẩn bị danh sách và gửi yêu cầu đăng ký học phần bằng phiên portal hiện tại.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://portal.ctdb.hcmus.edu.vn/*"],
+  "action": {
+    "default_title": "HCMUS Course Assist",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://portal.ctdb.hcmus.edu.vn/*"],
+      "js": ["bridge.js"],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://portal.ctdb.hcmus.edu.vn/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

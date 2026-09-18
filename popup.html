@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HCMUS Course Assist</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">HCMUS PORTAL</p>
+        <h1>Đăng ký học phần</h1>
+      </div>
+      <span id="connectionBadge" class="badge badge-muted">Đang kiểm tra</span>
+    </header>
+
+    <section class="notice" id="notice" aria-live="polite">
+      Hãy giữ một tab portal đã đăng nhập trong suốt quá trình đăng ký.
+    </section>
+
+    <section class="toolbar">
+      <button id="syncButton" class="button button-secondary" type="button">Lấy danh sách từ portal</button>
+      <button id="clearButton" class="button button-ghost" type="button">Xóa dữ liệu cũ</button>
+    </section>
+
+    <section class="manual-entry">
+      <label for="manualMaMG">Thêm MaMG thủ công</label>
+      <div class="manual-row">
+        <input id="manualMaMG" type="text" inputmode="numeric" maxlength="64" placeholder="Ví dụ: 6553">
+        <button id="manualAddButton" class="button button-secondary" type="button">Thêm</button>
+      </div>
+    </section>
+
+    <section class="course-section">
+      <div class="section-heading">
+        <div>
+          <h2>Danh sách đã chuẩn bị</h2>
+          <p id="syncMeta">Chưa đồng bộ dữ liệu</p>
+        </div>
+        <span id="selectedCount" class="selection-count">0 đã chọn</span>
+      </div>
+
+      <label class="search-label" for="searchInput">Tìm môn hoặc lớp</label>
+      <input id="searchInput" class="search-input" type="search" placeholder="Mã môn, tên môn, mã lớp, MaMG…">
+      <div id="courseList" class="course-list"></div>
+    </section>
+
+    <section class="action-panel">
+      <p class="action-note">Yêu cầu được gửi tuần tự bằng phiên đăng nhập của tab portal.</p>
+      <button id="registerButton" class="button button-primary" type="button" disabled>
+        Đăng ký các lớp đã chọn
+      </button>
+    </section>
+
+    <section id="resultSection" class="result-section" hidden>
+      <div class="section-heading">
+        <h2>Kết quả</h2>
+        <button id="clearResultsButton" class="text-button" type="button">Xóa kết quả</button>
+      </div>
+      <div id="resultList" class="result-list" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="shared.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
